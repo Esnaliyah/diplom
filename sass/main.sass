@@ -1,4 +1,11 @@
-@import ./config/var
-@import ./config/mixin   
-@import ./config/fonts 
-@import ./config/default
+@import './config/var'
+@import '../node_modules/bootstrap/scss/bootstrap'
+@import './config/mixin'
+@import './config/base'
+
+
+$hamburger-types: (elastic)
+$hamburger-layer-color: ($secondColor)
+@import '../node_modules/hamburgers/_sass/hamburgers/hamburgers'
+
+@import './common/header'

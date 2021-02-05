@@ -1,0 +1,115 @@
+.header
+    background:
+        image: url(../img/bg.png)
+        size: contain
+        repeat: no-repeat
+
+    +tablet
+        background:
+            size: rem(800px) auto
+            position: right bottom
+
+.navbar__logo
+    width: rem(70px)
+    
+    +desktop
+        width: rem(100px)
+
+
+.nav
+    +pos-overlay(rgba(#36c5e9, .9))
+    +flex(center, center, $dir: column)
+    margin: 0 rem(-10px)
+    top: -100vh
+    height: 100vh
+    bottom: auto
+    transition: .5s
+
+    +tablet
+        position: static
+        background: unset
+        +flex($dir: row)
+        height: auto
+        
+    &.is-active
+        top: 0
+
+    &__link
+        text-decoration: none
+        margin: 0 rem(10px)
+        +use-font($font, $size: rem(20px), $color: white, $weight: 400)
+        
+        
+        &--active
+            color: $secondColor
+
+        &:hover
+            text-decoration: none
+            
+            
+        +tablet
+            position: relative
+            margin: 0 rem(10px)
+            +use-font($font, $size: rem(16px), $color: $textColor, $weight: 400)
+
+            &--active
+                color: $secondColor
+
+            &--bordered
+                border: rem(1px) solid $secondColor
+                padding: rem(7px) rem(10px)
+                color: $secondColor
+
+
+                +desktop
+                    padding: rem(19px) rem(48px)
+
+
+.hamburger
+    +tablet
+        display: none
+
+.header__content
+    margin-top: rem(200px)
+    width: rem(200px)
+
+    +tablet
+        margin-top: rem(312px)
+        width: rem(514px) 
+
+
+.header__title
+    +use-font($font, $size:rem(30px), $color: $mainColor, $weight: 700)
+
+    +tablet
+        font-size: rem(50px)
+    
+    +desktop
+        font-size: rem(75px)
+
+.header__desc
+    +use-font($font, $size:rem(15px), $color: $mainColor, $weight: 400)
+    margin-top: rem(30px)
+
+    +tablet
+        font-size: rem(22px)
+        margin-top: rem(71px)
+
+.header__btn
+    width: rem(150px)
+    height: rem(40px)
+    background: #3984f3
+    border: none
+    color: white
+    margin-top: rem(70px)
+
+    +tablet
+        width: rem(203px)
+        height: rem(58px)
+        margin-top: rem(115px)
+
+
+
+
+
+
