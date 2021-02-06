@@ -1,0 +1,40 @@
+.slide
+    margin-top: rem(50px)
+
+.swiper-container
+    max-width: rem(250px)
+    height: rem(200px)
+
+    +tablet
+        margin-left: rem(-50px)
+        max-width: rem(500px)
+        height: rem(400px)
+.swiper-img
+    width: 100%
+    object-fit: cover
+    object-position: center center
+
+
+.slide__title
+    +use-font($font, $size:rem(20px), $color: $mainColor, $weight: 700)
+    margin-top: rem(20px)
+
+    +tablet
+        font-size: rem(32px)
+
+.slide__desc
+    +use-font($font, $size:rem(10px), $color: $mainColor, $weight: 400)
+    margin-top: rem(10px)
+
+    +tablet
+        font-size: rem(12px)
+        margin-top: rem(30px)
+
+.slide__btn
+    width: rem(70px)
+    height: rem(20px)
+    background: #3984f3
+    border: none
+    font-size: rem(12px)
+    color: white
+    margin-top: rem(20px)
