@@ -1,0 +1,40 @@
+.footer__nav
+    list-style: none
+    margin-top: rem(50px)
+    text-align: center
+    +tablet
+        display: flex
+        justify-content: space-between
+        margin-top: rem(80px)
+        +use-font($font, $size:rem(16px), $color: $mainColor, $weight: 400)
+    +laptop
+        +use-font($font, $size:rem(22px), $color: $mainColor, $weight: 400)
+
+.footer__rights
+    text-align: center
+    +use-font($font, $size:rem(12px), $color: $mainColor, $weight: 700)
+    margin-top: rem(40px)
+    +tablet
+        +use-font($font, $size:rem(22px), $color: $mainColor, $weight: 700)
+        margin-top: rem(50px)
+
+span
+    +use-font($font, $size:rem(12px), $color: gray, $weight: 400)
+    +tablet
+        +use-font($font, $size:rem(22px), $color: gray, $weight: 400)
+
+.footer__social
+    margin: rem(20px)
+    display: flex
+    justify-content: space-around
+    +tablet
+        margin: rem(50px)
+
+i
+    width: 40px
+    height: 40px
+    text-align: center
+    padding-top: 10px
+    border-radius: 50%
+    background-color: $secondColor
+    color: white

@@ -1,0 +1,55 @@
+.reg
+    background:
+        image: url(../img/bg2.png)
+        size: cover
+        position: center
+    padding: rem(100px) 0
+    margin-top: rem(20px)
+    position: relative
+
+    &:after
+        content: ""
+        +pos-overlay($bg: #284761ee)
+        z-index: -1
+
+.reg__subtitle
+    +use-font($font, $size:rem(22px), $color: white, $weight: 400)
+    text-align: center
+    +desktop
+        font-size: rem(32px)
+.reg__title
+    +use-font($font, $size:rem(32px), $color: $mainColor, $weight: 700)
+    margin-top: rem(30px)
+    text-align: center
+    color: white
+
+    +tablet
+        font-size: rem(48px)
+
+.reg__form
+    list-style: none
+    +laptop
+        display: flex
+        justify-content: space-between
+        margin: rem(70px) rem(-50px)
+
+.reg__item
+    margin: rem(20px) 0
+
+.form__field
+    width: 200px
+    height: 70px
+    border: none
+    font-size: 32px
+    color: white
+    background: rgba(255, 255, 255, 0.3)
+
+
+.form__btn
+    width: 250px
+    height: 70px
+    border: none
+    font-size: 32px
+    background: $secondColor
+    color: white
+
